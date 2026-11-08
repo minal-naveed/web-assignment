@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Grind Cafe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>The Daily Grind Cafe</h1>
+        <p>Your favorite neighborhood spot for fresh coffee and pastries</p>
+        
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#menu">Our Special Menu</a>
+            <a href="#prices">Price List</a>
+            <a href="#contact">Order Online</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="about">
+            <h2>Welcome to Our Coffee Shop</h2>
+            
+            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=80" alt="Coffee Cup on Table" class="hero-image">
+
+            <p>The Daily Grind Cafe started in 2020 with a simple goal: to serve good coffee in a cozy place. We use fresh coffee beans every morning and make our own sweet breads and cakes.</p>
+
+            <p>Whether you want to sit with your laptop and work, read a book, or chat with your friends, our cafe has comfortable seats and free Wi-Fi for everyone.</p>
+
+            <h3>Why Customers Choose Us</h3>
+    
+            <ol type="A">
+                <li>Freshly roasted organic coffee beans every day.</li>
+                <li>Homemade cakes and fresh croissants.</li>
+                <li>Quiet environment with fast internet.</li>
+            </ol>
+        </section>
+
+        <section id="menu">
+            <h2>Our Popular Drinks</h2>
+            
+            <div class="card-wrapper">
+               
+                <article class="food-card">
+                    <h3>Espresso Shot</h3>
+                    <p>Strong and rich dark coffee shot made from fresh roasted beans.</p>
+                </article>
+
+                <article class="food-card">
+                    <h3>Caramel Latte</h3>
+                    <p>Smooth espresso mixed with warm milk and sweet caramel syrup.</p>
+                </article>
+
+                <article class="food-card">
+                    <h3>Cold Brew</h3>
+                    <p>Slowly brewed for 12 hours and served with ice for a refreshing taste.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="prices">
+            <h2>Menu Price List</h2>
+            <p>Here is a quick look at our daily menu prices:</p>
+            <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item Name</th>
+                        <th>Category</th>
+                        <th>Price ($)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hot Cappuccino</td>
+                        <td>Coffee</td>
+                        <td>$4.00</td>
+                    </tr>
+                    <tr>
+                        <td>Iced Americano</td>
+                        <td>Cold Coffee</td>
+                        <td>$3.50</td>
+                    </tr>
+                    <tr>
+                        <td>Chocolate Muffin</td>
+                        <td>Bakery</td>
+                        <td>$2.50</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Table Booking & Pre-Order</h2>
+            
+            <form action="#" method="post">
+                <div class="input-box">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="input-box">
+                    <p>Sitting Area Choice:</p>
+                    <input type="radio" id="inside" name="sitting" value="inside" checked>
+                    <label for="inside">Inside Sitting</label><br>
+
+                    <input type="radio" id="outside" name="sitting" value="outside">
+                    <label for="outside">Outdoor Garden</label>
+                </div>
+
+                <div class="input-box">
+                    <p>Extra Options:</p>
+                    <input type="checkbox" id="takeaway" name="takeaway">
+                    <label for="takeaway">Pack as Takeaway</label><br>
+
+                    <input type="checkbox" id="newsletter" name="newsletter" checked>
+                    <label for="newsletter">Send me discount emails</label>
+                </div>
+
+                <button type="submit">Submit Order</button>
+            </form>
+        </section>
+
+    </main>
+
+</body>
+</html>

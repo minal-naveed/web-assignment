@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f5f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #4a3525;
+    color: white;
+    text-align: center;
+    padding: 20px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+nav {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+nav a {
+    color: #e6c9a8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+h2 {
+    color: #4a3525;
+    border-bottom: 2px solid #8c6d53;
+    padding-bottom: 5px;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+ol[type="A"] {
+    background: #fdfaf7;
+    padding: 15px 15px 15px 30px;
+    border-left: 3px solid #8c6d53;
+}
+
+.card-wrapper {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.food-card {
+    flex: 1 1 220px;
+    background: #fdfaf7;
+    border: 1px solid #e0d7cd;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.food-card h3 {
+    color: #8c6d53;
+    margin-top: 0;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #8c6d53;
+    color: white;
+}
+
+.input-box {
+    margin-bottom: 12px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4a3525;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 200px;
+}
+
+button:hover {
+    background-color: #8c6d53;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #4a3525;
+    color: white;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .card-wrapper {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+        max-width: none;
+    }
+}
